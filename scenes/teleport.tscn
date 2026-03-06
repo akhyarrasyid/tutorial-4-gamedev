@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://jeygtad3senn"]
+
+[ext_resource type="Script" uid="uid://bukadgfx65u16" path="res://scenes/teleport.gd" id="1_2ayim"]
+[ext_resource type="Texture2D" uid="uid://c8owpoucpntbb" path="res://assets/kenney_platformerpack/PNG/Tiles/doorClosed_mid.png" id="1_w4hbs"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2ayim"]
+size = Vector2(62, 77)
+
+[node name="Teleport" type="Area2D" unique_id=1779271922]
+position = Vector2(3, 2)
+script = ExtResource("1_2ayim")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=193005456]
+position = Vector2(42, -24.5)
+shape = SubResource("RectangleShape2D_2ayim")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=839258604]
+position = Vector2(42, -25.000002)
+scale = Vector2(0.5, 0.609375)
+texture = ExtResource("1_w4hbs")

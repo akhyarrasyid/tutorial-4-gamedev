@@ -1,9 +1,8 @@
 extends CharacterBody2D
 
 @export var speed: int = 400
-@export var gravity: int = 1200
-@export var jump_speed: int = -400
-
+@export var gravity: int = 1000    # Diturunin biar nggak terlalu berat
+@export var jump_speed: int = -550 # Dinaikin (lebih negatif) biar lompat lebih tinggi
 
 func get_input():
 	velocity.x = 0
